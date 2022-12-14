@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
     <!-- main -->
-    <main class="container">
-        <form>
-            <h2>TABLAS DE MULTIPLICAR</h2>
-            <div class="inputs-flex">
-                <input type="text" class="form-control" id="" placeholder="Ingresar tabla" required>
-                <input type="text" class="form-control" id="" placeholder="Ingresar fila" required>
-            </div>
-            <button onclick="mostrar()">CALCULAR</button>
-        </form>
+    <main class="calculadora">
+        <button id="delete-all">c</button>
+        <button id="delete"></button>
+        <button id="rest">%</button>
+        <button id="division">÷</button>
 
-        <!-- resultado -->
-        <div class="row" id="respuesta"></div>
+        <button id="seven">7</button>
+        <button id="eigth">8</button>
+        <button id="nine">9</button>
+        <button id="multiplication">x</button>
+
+        <button id="four">4</button>
+        <button id="five">5</button>
+        <button id="six">6</button>
+        <button id="sum">+</button>
+
+        <button id="one">1</button>
+        <button id="two">2</button>
+        <button id="three">3</button>
+        <button id="subtraction">-</button>
+
+        <button id="point">.</button>
+        <button id="zero">0</button>
+        <button id="result">=</button>
     </main>
 
     <!-- footer -->
-    <footer class="contentf d-flex justify-content-center">
-        <p>
-            Todos los derechos reservados &copy; <span id="year"></span>
-        </p>
+    <footer>
+        <p>Todos los derechos reservados &copy; <span id="year"></span></p>
     </footer>
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
