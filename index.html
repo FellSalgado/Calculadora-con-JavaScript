@@ -8,12 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
-
-<body>
+<body onload="init()">
     <!-- main -->
     <main class="calculadora">
+        <div class="result">
+            <span id="result"></span>
+        </div>
+
         <button id="delete-all">c</button>
-        <button id="delete"></button>
+        <button id="delete"><-</button>
         <button id="rest">%</button>
         <button id="division">÷</button>
 
@@ -34,12 +37,12 @@
 
         <button id="point">.</button>
         <button id="zero">0</button>
-        <button id="result">=</button>
+        <button id="equal">=</button>
     </main>
 
     <!-- footer -->
     <footer>
-        <p>Todos los derechos reservados &copy; <span id="year"></span></p>
+        <p>Elaborado con 💙 por Felix Salgado - Todos los derechos reservados &copy; <span id="year"></span></p>
     </footer>
 
     <script src="./js/script.js"></script>
