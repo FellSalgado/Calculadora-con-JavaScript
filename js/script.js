@@ -9,6 +9,7 @@ function init() {
     let result = document.getElementById('result');
     let point = document.getElementById('point');
     let reset = document.getElementById('delete');
+
     let zero = document.getElementById('zero');
     let one = document.getElementById('one');
     let two = document.getElementById('two');
@@ -19,37 +20,38 @@ function init() {
     let seven = document.getElementById('seven');
     let eigth = document.getElementById('eigth');
     let nine = document.getElementById('nine');
+
     let equal = document.getElementById('equal');
 
     one.onclick = function(e) {
-        result.textContent = result.textContent + '1'
+        result.textContent += '1'
     }
     two.onclick = function(e) {
-        result.textContent = result.textContent + '2'
+        result.textContent += '2'
     }
     three.onclick = function(e) {
-        result.textContent = result.textContent + '3'
+        result.textContent += '3'
     }
     four.onclick = function(e) {
-        result.textContent = result.textContent + '4'
+        result.textContent += '4'
     }
     five.onclick = function(e) {
-        result.textContent = result.textContent + '5'
+        result.textContent += '5'
     }
     six.onclick = function(e) {
-        result.textContent = result.textContent + '6'
+        result.textContent += '6'
     }
     seven.onclick = function(e) {
-        result.textContent = result.textContent + '7'
+        result.textContent += '7'
     }
     eigth.onclick = function(e) {
-        result.textContent = result.textContent + '8'
+        result.textContent += '8'
     }
     nine.onclick = function(e) {
-        result.textContent = result.textContent + '9'
+        result.textContent += '9'
     }
     zero.onclick = function(e) {
-        result.textContent = result.textContent + '0'
+        result.textContent += '0'
     }
 
     /* delete */
@@ -60,27 +62,27 @@ function init() {
     /* operations */
     sum.onclick = function(e) {
         operandoA = result.textContent
-        result.textContent = result.textContent + '+'
+        result.textContent += '+'
         operacion = '+'
     }
     subtraction.onclick = function(e) {
         operandoA = result.textContent
-        result.textContent = result.textContent + '-'
+        result.textContent += '-'
         operacion = '-'
     }
     multiplication.onclick = function(e) {
         operandoA = result.textContent
-        result.textContent = result.textContent + '*'
+        result.textContent += '*'
         operacion = '*'
     }
     division.onclick = function(e) {
         operandoA = result.textContent
-        result.textContent = result.textContent + '/'
+        result.textContent += '/'
         operacion = '/'
     }
 
     equal.onclick = function(e) {
-        operandoB = result.textContent
+        operandoB = 2
         resolver()
     }
 }
